@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CUSTOM STYLESHEETS -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/quick.css" />
+  </head>
+  <body>
+    <header class="flex align-center justify-center full-width">
+      <section
+        class="control-width full-width header flex align-center justify-between"
+      >
+        <div class="logo">ARCHITECTURELY</div>
+        <nav>
+          <ul class="menu">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PORTFOLIO</li>
+            <li>BLOG</li>
+            <li>CONTACT US</li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="flex-col align-center">
+      <!-- HERO -->
+      <section class="hero flex full-width justify-center">
+        <div
+          class="container flex control-width hero-body align-end justify-between hero-gap"
+        >
+          <div class="hero-h">
+            <h1>We are a fine architecture firm in New York</h1>
+          </div>
+          <div class="hero-btn">
+            <a>GET IN TOUCH</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR IMPACT -->
+      <section class="full-width flex-col control-width sd-padding gap">
+        <div class="half-width flex-col gap">
+          <h2 class="secondary">Our impact<br />in numbers</h2>
+          <a class="btn dark-bg"
+            >SEE MORE <img src="/images/Arrow Right.svg" alt=""
+          /></a>
+        </div>
+        <div class="flex-col stats-div gap">
+          <div class="flex full-width justify-between align-center">
+            <div class="full-width">
+              <h3 class="stats">300+</h3>
+              <p class="stat-content">Completed projects</p>
+            </div>
+            <div class="vertical-divider dark-bg"></div>
+            <div class="full-width stat-left">
+              <div class="left-stat">
+                <h3 class="stats">99%</h3>
+                <p class="stat-content">Customers Satisfaction</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex full-width justify-between align-center">
+            <div class="full-width">
+              <h3 class="stats">200+</h3>
+              <p class="stat-content">Customers</p>
+            </div>
+            <div class="vertical-divider dark-bg"></div>
+            <div class="full-width stat-left">
+              <div class="left-stat">
+                <h3 class="stats">25+</h3>
+                <p class="stat-content">Awards recieved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR SERVICES -->
+      <section class="full-width align-center flex-col sd-padding gap dark-bg">
+        <div class="full-width control-width flex justify-between">
+          <h1 class="secondary">Our services</h1>
+          <p class="service-p">
+            We take pride in our commitment to quality, creativity, and client
+            satisfaction. Our goal is to provide you with a service that not
+            only meets your expectations but exceeds them. Contact us today to
+            learn more about how we can help bring your architectural dreams to
+            life.
+          </p>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div
+          class="align-center full-width flex-col justify-between"
+          id="services"
+        >
+          <div class="full-width slide flex">
+            <div class="services-items gap flex-col no-shrink">
+              <div class="flex service-item">
+                <svg
+                  width="86"
+                  height="86"
+                  viewBox="0 0 86 86"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="service-cta"
+                >
+                  <circle cx="43" cy="43" r="43" fill="#050505" />
+                  <path
+                    d="M55.4173 36.7714C55.5819 36.1569 55.2173 35.5254 54.6029 35.3607L44.59 32.6778C43.9756 32.5132 43.344 32.8778 43.1794 33.4922C43.0147 34.1067 43.3794 34.7382 43.9938 34.9029L52.8941 37.2877L50.5093 46.188C50.3446 46.8025 50.7093 47.434 51.3237 47.5987C51.9382 47.7633 52.5697 47.3987 52.7344 46.7842L55.4173 36.7714ZM32.2712 50.5243L54.8807 37.4708L53.7289 35.4758L31.1194 48.5294L32.2712 50.5243Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <img src="/images/storey building.jpeg" alt="" />
+              </div>
+              <h3>Architectural Design</h3>
+            </div>
+            <div class="services-items gap flex-col no-shrink">
+              <div class="flex service-item">
+                <svg
+                  width="86"
+                  height="86"
+                  viewBox="0 0 86 86"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="service-cta"
+                >
+                  <circle cx="43" cy="43" r="43" fill="#050505" />
+                  <path
+                    d="M55.4173 36.7714C55.5819 36.1569 55.2173 35.5254 54.6029 35.3607L44.59 32.6778C43.9756 32.5132 43.344 32.8778 43.1794 33.4922C43.0147 34.1067 43.3794 34.7382 43.9938 34.9029L52.8941 37.2877L50.5093 46.188C50.3446 46.8025 50.7093 47.434 51.3237 47.5987C51.9382 47.7633 52.5697 47.3987 52.7344 46.7842L55.4173 36.7714ZM32.2712 50.5243L54.8807 37.4708L53.7289 35.4758L31.1194 48.5294L32.2712 50.5243Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <img src="/images/living room.png" alt="" />
+              </div>
+              <h3>Interior Design</h3>
+            </div>
+            <div class="services-items gap flex-col no-shrink">
+              <div class="flex service-item">
+                <svg
+                  width="86"
+                  height="86"
+                  viewBox="0 0 86 86"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="service-cta"
+                >
+                  <circle cx="43" cy="43" r="43" fill="#050505" />
+                  <path
+                    d="M55.4173 36.7714C55.5819 36.1569 55.2173 35.5254 54.6029 35.3607L44.59 32.6778C43.9756 32.5132 43.344 32.8778 43.1794 33.4922C43.0147 34.1067 43.3794 34.7382 43.9938 34.9029L52.8941 37.2877L50.5093 46.188C50.3446 46.8025 50.7093 47.434 51.3237 47.5987C51.9382 47.7633 52.5697 47.3987 52.7344 46.7842L55.4173 36.7714ZM32.2712 50.5243L54.8807 37.4708L53.7289 35.4758L31.1194 48.5294L32.2712 50.5243Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <img src="/images/kitchen.png" alt="" />
+              </div>
+              <h3>Home Decoration</h3>
+            </div>
+            <div class="services-items gap flex-col no-shrink">
+              <div class="flex service-item">
+                <svg
+                  width="86"
+                  height="86"
+                  viewBox="0 0 86 86"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="service-cta"
+                >
+                  <circle cx="43" cy="43" r="43" fill="#050505" />
+                  <path
+                    d="M55.4173 36.7714C55.5819 36.1569 55.2173 35.5254 54.6029 35.3607L44.59 32.6778C43.9756 32.5132 43.344 32.8778 43.1794 33.4922C43.0147 34.1067 43.3794 34.7382 43.9938 34.9029L52.8941 37.2877L50.5093 46.188C50.3446 46.8025 50.7093 47.434 51.3237 47.5987C51.9382 47.7633 52.5697 47.3987 52.7344 46.7842L55.4173 36.7714ZM32.2712 50.5243L54.8807 37.4708L53.7289 35.4758L31.1194 48.5294L32.2712 50.5243Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <img src="/images/modern pyramid.jpeg" alt="" />
+              </div>
+              <h3>Exterior Design</h3>
+            </div>
+            <div class="services-items gap flex-col no-shrink">
+              <div class="flex service-item">
+                <svg
+                  width="86"
+                  height="86"
+                  viewBox="0 0 86 86"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="service-cta"
+                >
+                  <circle cx="43" cy="43" r="43" fill="#050505" />
+                  <path
+                    d="M55.4173 36.7714C55.5819 36.1569 55.2173 35.5254 54.6029 35.3607L44.59 32.6778C43.9756 32.5132 43.344 32.8778 43.1794 33.4922C43.0147 34.1067 43.3794 34.7382 43.9938 34.9029L52.8941 37.2877L50.5093 46.188C50.3446 46.8025 50.7093 47.434 51.3237 47.5987C51.9382 47.7633 52.5697 47.3987 52.7344 46.7842L55.4173 36.7714ZM32.2712 50.5243L54.8807 37.4708L53.7289 35.4758L31.1194 48.5294L32.2712 50.5243Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <img
+                  src="/images/zhao-yangyang-9mGJzG0gVNE-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>Home Furnitures</h3>
+            </div>
+          </div>
+
+          <!-- SLIDES CONTROL -->
+          <div class="full-width control-width carousel-controls">
+            <div class="flex full-width justify-end gap">
+              <div class="previous-service nav-icons" id="service-prev">
+                <svg
+                  width="6vh"
+                  height="4vh"
+                  viewBox="0 0 74 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M72 28.3273L28.25 28.3273H2M2 28.3273L28.25 52M2 28.3273L28.25 2"
+                    stroke-width="3.26772"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="next-service nav-icons" id="service-next">
+                <svg
+                  width="6vh"
+                  height="4vh"
+                  viewBox="0 0 74 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 25.6727H45.75H72M72 25.6727L45.75 2M72 25.6727L45.75 52"
+                    stroke-width="3.26772"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MORE INFO -->
+      <section
+        class="full-width align-center flex control-width sd-padding gap more-info"
+      >
+        <div class="half-width">
+          <img width="100%" src="/images/pexels-pixabay-259239 1.png" alt="" />
+        </div>
+        <div class="half-width flex-col gap">
+          <h2 class="info-h">
+            We design places that improve life and works by adding a strong
+            sense of purpose and identity
+          </h2>
+          <p>
+            Our team of experienced architects and designers are dedicated to
+            providing tailored solutions that reflect your unique needs and
+            preferences. Whether you're looking to build a new home, renovate an
+            existing space, or create a commercial development, we have the
+            skills, knowledge, and expertise to bring your vision to life.
+          </p>
+          <a class="btn dark-bg"
+            >SEE MORE <img src="/images/Arrow Right.svg" alt=""
+          /></a>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section
+        class="full-width align-center flex-col justify-center sd-padding gray-bg gap overflowX-0"
+      >
+        <div class="full-width flex-col align-center">
+          <div class="flex control-width justify-between">
+            <h1 class="secondary">Over 100+<br />people trust us</h1>
+            <p class="service-p">
+              We also place a strong emphasis on sustainability and
+              environmental responsibility. Our team of experts incorporates
+              sustainable design principles and practices into every project,
+              ensuring that we minimize the environmental impact of our work
+              while still delivering
+            </p>
+          </div>
+
+          <!-- TESTIMONIALS CAROUSEL -->
+
+          <div class="flex full-width align-center testimonial-slide">
+            <div class="full-width flex justify-center no-shrink">
+              <div class="testimonial control-width flex-col">
+                <img
+                  class="testimonial-quote"
+                  src="/images/“.svg"
+                  alt="quote"
+                />
+                <h3 class="test-summary">
+                  Fast work and always delivers the best
+                </h3>
+                <p>
+                  I had the pleasure of working with Architecturely on a
+                  commercial development project and I couldn't be happier with
+                  the results. Their team was incredibly professional and
+                  attentive to our needs, and they delivered a design that
+                  exceeded our expectations.
+                </p>
+                <div class="testimonial-user-info flex gap align-center">
+                  <img src="/images/happy customer 1.jpeg" alt="" />
+                  <div>
+                    <h4>Kim Davids</h4>
+                    <p>CEO Moddy Tech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="full-width flex justify-center no-shrink">
+              <div class="testimonial control-width flex-col">
+                <img
+                  class="testimonial-quote"
+                  src="/images/“.svg"
+                  alt="quote"
+                />
+                <h3 class="test-summary">
+                  Fast work and always delivers the best
+                </h3>
+                <p>
+                  I had the pleasure of working with Architecturely on a
+                  commercial development project and I couldn't be happier with
+                  the results. Their team was incredibly professional and
+                  attentive to our needs, and they delivered a design that
+                  exceeded our expectations.
+                </p>
+                <div class="testimonial-user-info flex gap align-center">
+                  <img src="/images/happy customer 1.jpeg" alt="" />
+                  <div>
+                    <h4>Kim Davids</h4>
+                    <p>CEO Moddy Tech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="full-width flex justify-center no-shrink">
+              <div class="testimonial control-width flex-col">
+                <img
+                  class="testimonial-quote"
+                  src="/images/“.svg"
+                  alt="quote"
+                />
+                <h3 class="test-summary">
+                  Fast work and always delivers the best
+                </h3>
+                <p>
+                  I had the pleasure of working with Architecturely on a
+                  commercial development project and I couldn't be happier with
+                  the results. Their team was incredibly professional and
+                  attentive to our needs, and they delivered a design that
+                  exceeded our expectations.
+                </p>
+                <div class="testimonial-user-info flex gap align-center">
+                  <img src="/images/happy customer 1.jpeg" alt="" />
+                  <div>
+                    <h4>Kim Davids</h4>
+                    <p>CEO Moddy Tech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIALS NAVIGATION -->
+          <div
+            class="flex control-width align-center gap full-width testimonial-nav"
+          >
+            <div class="test-nav-icons" id="previous-testimonial">
+              <svg
+                width="6vh"
+                height="4vh"
+                viewBox="0 0 74 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M72 28.3273L28.25 28.3273H2M2 28.3273L28.25 52M2 28.3273L28.25 2"
+                  stroke-width="3.26772"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="full-width horizontal-divider dark-bg"></div>
+            <div class="test-nav-icons" id="next-testimonial">
+              <svg
+                width="6vh"
+                height="4vh"
+                viewBox="0 0 74 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 25.6727H45.75H72M72 25.6727L45.75 2M72 25.6727L45.75 52"
+                  stroke-width="3.26772"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="full-width flex-col align-center footer gap dark-bg">
+      <section class="full-width control-width flex-col gap">
+        <div class="flex full-width">
+          <div class="half-width">
+            <h2 class="footer-h">
+              Want to build your <br />
+              dream home?
+            </h2>
+          </div>
+          <div class="half-width newsletter">
+            <form class="newsletter-form flex">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Your email address..."
+              />
+              <div type="submit" class="btn light-bg">
+                <img src="/images/Vector (1).svg" alt="" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="flex full-width justify-between footer-policy">
+          <ul class="footer-menu">
+            <li>Terms & conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+          <ul class="footer-menu">
+            <li>Contact Us</li>
+            <li>License</li>
+          </ul>
+        </div>
+        <div class="horizontal-divider light-bg"></div>
+        <div class="social-media flex justify-center">
+          <div class="social-icon">
+            <img src="/images/Vector (1) copy.svg" alt="facebook" />
+          </div>
+          <div class="social-icon">
+            <img src="/images/Vector (2).svg" alt="twitter" />
+          </div>
+          <div class="social-icon">
+            <img src="/images/Vector (3).svg" alt="linkedin" />
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="/app.js"></script>
+
+    <!-- <script>
+      let prev = document.getElementById("service-prev");
+      let next = document.getElementById("service-next");
+      const servicesCount = document.querySelectorAll(".services-items").length;
+
+      let slideIndex = 0;
+      const slide = document.querySelector(".slide");
+
+      function moveForward() {
+        slideIndex++;
+        const services = document.querySelectorAll(".services-items");
+
+        slide.style.transform = `translateX(-${slideIndex * 30}%)`;
+
+        slide.addEventListener("transitionrun", () => {
+          next.onclick = null;
+        });
+
+        slide.addEventListener("transitionend", () => {
+          document.querySelector(".slide").append(services[0]);
+          slide.style.left = `${slideIndex * 30}%`;
+          next.onclick = moveForward;
+        });
+      }
+
+      next.onclick = moveForward;
+
+      //let serviceInterval = setInterval(moveForward, 1000);
+
+      //
+      //function moveServiceNext() {
+      //  slideIndex++;
+      //  updateSlider();
+      //}
+      //
+      //function moveServicePrev() {
+      //  slideIndex--;
+      //  updateSlider();
+      //}
+      //
+      //function updateSlider() {
+      //  if (slideIndex > items.length - 3) slideIndex = 0;
+      //  if (slideIndex < 0) slideIndex = items.length - 3;
+      //  slide.style.transform = `translateX(-${slideIndex * 31}%)`;
+      //}
+      //
+      //next.onclick = moveServiceNext;
+      //prev.onclick = moveServicePrev;
+      //
+      //// Auto-slide
+      //setInterval(moveServiceNext, 5000);
+
+      //// let serviceSlide = document.querySelector(".slide");
+      //
+      //function moveServiceNext() {
+      //  let services = document.querySelectorAll(".services-items");
+      //
+      //  services.forEach((element) => {
+      //    element.style.animationPlayState = "running";
+      //
+      //    // Prevent glitches just incase the prev button is pressed multiple times
+      //    if ((element.style.animationPlayState = "running")) {
+      //      prev.onclick = null;
+      //      next.onclick = null;
+      //    }
+      //
+      //    let iteration = 0;
+      //    element.addEventListener("animationiteration", () => {
+      //      iteration++;
+      //      if (iteration === 1) {
+      //        element.style.animationPlayState = "paused";
+      //        document.querySelector(".slide").append(services[0]);
+      //        prev.onclick = moveServicePrev;
+      //        next.onclick = moveServiceNext;
+      //      }
+      //    });
+      //  });
+      //}
+      //
+      //function moveServicePrev() {
+      //  let services = document.querySelectorAll(".services-items");
+      //  document.querySelector(".slide").prepend(services[services.length - 1]);
+      //
+      //  services.forEach((element) => {
+      //    element.style.animationPlayState = "running";
+      //    element.style.animationDirection = "reverse";
+      //
+      //    // Prevent glitches just incase the prev button is pressed multiple times
+      //    if ((element.style.animationPlayState = "running")) {
+      //      prev.onclick = null;
+      //      next.onclick = null;
+      //    }
+      //
+      //    let iteration = 0;
+      //    element.addEventListener("animationiteration", () => {
+      //      iteration++;
+      //      if (iteration === 1) {
+      //        element.style.animationPlayState = "paused";
+      //        element.style.animationDirection = "normal";
+      //        prev.onclick = moveServicePrev;
+      //        next.onclick = moveServiceNext;
+      //      }
+      //    });
+      //  });
+      //}
+      //
+      //// On click of next and prev button
+      //next.onclick = moveServiceNext;
+      //prev.onclick = moveServicePrev;
+      //
+    </script> -->
+  </body>
+</html>
