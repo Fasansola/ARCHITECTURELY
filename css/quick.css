@@ -65,3 +65,13 @@
 .overflowX-0 {
     overflow-x: hidden;
 }
+
+.slideInLeft {
+    position: relative;
+    animation: slideinleft 2.5s;
+}
+
+.slideInRight {
+    position: relative;
+    animation: slideinright 2.5s;
+}

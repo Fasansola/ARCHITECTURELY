@@ -31,6 +31,7 @@
 
     <!-- CUSTOM STYLESHEETS -->
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/keyframes.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/quick.css" />
   </head>
@@ -57,10 +58,10 @@
         <div
           class="container flex control-width hero-body align-end justify-between hero-gap"
         >
-          <div class="hero-h">
+          <div class="hero-h slideInLeft">
             <h1>We are a fine architecture firm in New York</h1>
           </div>
-          <div class="hero-btn flex-col">
+          <div class="hero-btn flex-col slideInRight">
             <a>GET IN TOUCH</a>
             <img
               class="hero-btn-arrow no-shrink"
@@ -73,13 +74,14 @@
 
       <!-- OUR IMPACT -->
       <section class="full-width flex-col control-width sd-padding gap">
-        <div class="half-width flex-col gap">
+        <div class="half-width flex-col gap slideInLeft">
           <h2 class="secondary">Our impact<br />in numbers</h2>
           <a class="btn dark-bg"
             >SEE MORE <img src="./images/Arrow Right.svg" alt=""
           /></a>
         </div>
-        <div class="flex-col stats-div gap">
+
+        <div class="flex-col stats-div gap slideInRight">
           <div class="flex full-width justify-between align-center">
             <div class="full-width">
               <h3 class="stats">300+</h3>
@@ -112,8 +114,8 @@
       <!-- OUR SERVICES -->
       <section class="full-width align-center flex-col sd-padding gap dark-bg">
         <div class="full-width control-width flex justify-between">
-          <h1 class="secondary">Our services</h1>
-          <p class="service-p">
+          <h1 class="secondary slideInLeft">Our services</h1>
+          <p class="service-p slideInRight">
             We take pride in our commitment to quality, creativity, and client
             satisfaction. Our goal is to provide you with a service that not
             only meets your expectations but exceeds them. Contact us today to
@@ -282,10 +284,10 @@
       <section
         class="full-width align-center flex control-width sd-padding gap more-info"
       >
-        <div class="half-width">
+        <div class="half-width slideInLeft">
           <img width="100%" src="./images/pexels-pixabay-259239 1.png" alt="" />
         </div>
-        <div class="half-width flex-col gap">
+        <div class="half-width flex-col gap slideInRight">
           <h2 class="info-h">
             We design places that improve life and works by adding a strong
             sense of purpose and identity
@@ -309,8 +311,10 @@
       >
         <div class="full-width flex-col align-center">
           <div class="flex control-width justify-between">
-            <h1 class="secondary">Over 100+<br />people trust us</h1>
-            <p class="service-p">
+            <h1 class="secondary slideInLeft">
+              Over 100+<br />people trust us
+            </h1>
+            <p class="service-p slideInRight">
               We also place a strong emphasis on sustainability and
               environmental responsibility. Our team of experts incorporates
               sustainable design principles and practices into every project,
@@ -332,7 +336,7 @@
                 <h3 class="test-summary">
                   Fast work and always delivers the best
                 </h3>
-                <p>
+                <p class="">
                   I had the pleasure of working with Architecturely on a
                   commercial development project and I couldn't be happier with
                   the results. Their team was incredibly professional and
@@ -358,7 +362,7 @@
                 <h3 class="test-summary">
                   Innovative designs with unmatched quality
                 </h3>
-                <p>
+                <p class="">
                   Architecturely transformed our residential complex project
                   beyond our wildest dreams. Their creativity, coupled with
                   their technical expertise, resulted in a living space that's
@@ -384,7 +388,7 @@
                 <h3 class="test-summary">
                   Exceptional service from concept to completion
                 </h3>
-                <p>
+                <p class="">
                   Working with Architecturely on our corporate headquarters was
                   an absolute delight. Their ability to translate our brand
                   identity into architectural elements was remarkable. They were
@@ -446,14 +450,14 @@
     <footer class="full-width flex-col align-center footer gap dark-bg">
       <section class="full-width control-width flex-col gap">
         <div class="flex full-width">
-          <div class="half-width">
+          <div class="half-width slideInLeft">
             <h2 class="footer-h">
               Want to build your <br />
               dream home?
             </h2>
           </div>
-          <div class="half-width newsletter">
-            <form class="newsletter-form flex">
+          <div class="half-width newsletter slideInRight">
+            <form method="POST" class="newsletter-form flex">
               <input
                 type="email"
                 id="email"
@@ -468,11 +472,11 @@
           </div>
         </div>
         <div class="flex full-width justify-between footer-policy">
-          <ul class="footer-menu">
+          <ul class="footer-menu slideInLeft">
             <li>Terms & conditions</li>
             <li>Privacy Policy</li>
           </ul>
-          <ul class="footer-menu">
+          <ul class="footer-menu slideInRight">
             <li>Contact Us</li>
             <li>License</li>
           </ul>
