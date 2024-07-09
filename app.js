@@ -75,7 +75,7 @@ let testInfininteScroll = () => {
 }
 
 
-setInterval(testInfininteScroll, 10000)
+setInterval(testInfininteScroll, 20000)
 
 testNext.onclick = moveTestNext;
 testPrev.onclick = moveTestBack;

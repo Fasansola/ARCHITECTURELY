@@ -22,11 +22,11 @@ p {
 }
 
 
-
 a {
     color: inherit;
     width: -moz-fit-content;
     width: fit-content;
+    cursor: pointer;
 }
 
 .btn {
@@ -44,6 +44,11 @@ a {
 
 .btn>img {
     width: 3vh;
+    transition: transform .25s ease-in;
+}
+
+.btn:hover img {
+    transform: rotate(-30deg);
 }
 
 .gap {
@@ -159,7 +164,21 @@ a {
     font-weight: 500;
     padding-right: 7vw;
     cursor: pointer;
+    width: 20%;
 }
+
+.hero-btn:hover .hero-btn-arrow {
+    width: 125%;
+    height: 2vh;
+}
+
+.hero-btn-arrow {
+    margin-top: 0.5vh;
+    width: 95%;
+    height: 2vh;
+    transition: width 1.5s ease;
+}
+
 
 
 .secondary {
@@ -320,7 +339,7 @@ a {
 
 .testimonial {
     width: 100%;
-    padding: 5vh 10vw;
+    padding: 5vh 5vw 5vh 8vw;
     margin: 5vh 0;
 }
 
