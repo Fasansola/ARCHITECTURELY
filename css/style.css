@@ -684,11 +684,6 @@ a {
 
     /* HEADER */
 
-    .header {
-        height: 14vh;
-        margin-bottom: -14vh;
-    }
-
     .logo {
         font-size: 5vw;
     }
@@ -696,7 +691,7 @@ a {
     /* HERO */
 
     .hero-body {
-        top: 80vw;
+        top: 50%;
     }
 
     .hero-h {
