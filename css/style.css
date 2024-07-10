@@ -26,6 +26,11 @@ p {
     line-height: 3.8vh;
 }
 
+h3 {
+    font-size: inherit;
+    line-height: inherit;
+}
+
 
 a {
     color: inherit;
@@ -325,7 +330,7 @@ a {
 .info-h {
     font-size: 5vh;
     font-weight: 500;
-    line-height: 6.5vh;
+    line-height: 7vh;
 }
 
 
@@ -571,8 +576,8 @@ a {
     }
 
     .hero-h {
-        font-size: 7.5vh;
-        line-height: 10vh;
+        font-size: 9vw;
+        line-height: 12vw;
         width: 85%;
     }
 
@@ -581,8 +586,8 @@ a {
     }
 
     .hero-btn {
-        font-size: 2.4vh;
-        line-height: 4.5vh;
+        font-size: 3.4vw;
+        line-height: 6vw;
         width: 40%;
     }
 
@@ -660,5 +665,73 @@ a {
     .newsletter-form {
         width: 100%;
         margin-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    /* GENERAL STYLES */
+
+    .control-width {
+        max-width: 92%;
+    }
+
+    p {
+        font-size: 4.5vw;
+        line-height: 8vw;
+    }
+
+    /* HERO */
+
+    .hero-body {
+        top: 80vw;
+    }
+
+    .hero-h {
+        font-size: 10vw;
+        line-height: 14vw;
+    }
+
+    .hero-gap {
+        gap: 14vw;
+    }
+
+    .hero-btn {
+        font-size: 5vw;
+        line-height: 7vw;
+        width: 50%;
+    }
+
+    /* OUR IMPACT */
+
+    .secondary {
+        font-size: 12vw;
+        line-height: 15vw;
+    }
+
+    .stats {
+        font-size: 10vw;
+        line-height: 12vw;
+    }
+
+    .stats-div p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+
+    .left-stat {
+        width: 70%;
+    }
+
+
+    /* SERVICES */
+
+    .service-p {
+        max-width: 100%;
+    }
+
+    .services-items {
+        width: 80%;
+        padding-left: 4%;
     }
 }
