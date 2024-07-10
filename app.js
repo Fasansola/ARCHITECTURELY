@@ -80,3 +80,23 @@ setInterval(testInfininteScroll, 20000)
 testNext.onclick = moveTestNext;
 testPrev.onclick = moveTestBack;
 
+
+
+// PLAY ANIMATIONS ON VIEW
+
+const animateSections = document.querySelectorAll('section');
+
+function checkScroll() {
+  const triggerBottom = window.innerHeight * 0.9;
+
+  animateSections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if (sectionTop < triggerBottom) {
+      section.classList.add("run-effects")
+    }
+  });
+}
+
+window.addEventListener('scroll', checkScroll);
+window.addEventListener('resize', checkScroll);
+window.addEventListener('load', checkScroll);

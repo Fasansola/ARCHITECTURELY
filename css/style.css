@@ -18,7 +18,7 @@ button {
 
 p {
     color: #424242;
-    line-height: 3vh;
+    line-height: 3.8vh;
 }
 
 
@@ -180,7 +180,6 @@ a {
 }
 
 
-
 .secondary {
     font-size: 8vh;
     line-height: 10vh;
@@ -246,8 +245,6 @@ a {
 }
 
 
-
-
 .services-items {
     position: relative;
     width: 30%;
@@ -306,15 +303,13 @@ a {
 }
 
 
-
-
 /* MORE INFO SECTION */
 
 
 .info-h {
     font-size: 5vh;
     font-weight: 500;
-    line-height: 6vh;
+    line-height: 6.5vh;
 }
 
 .more-info {

@@ -66,12 +66,16 @@
     overflow-x: hidden;
 }
 
-.slideInLeft {
+/* .run-effects {
+    animation-play-state: running;
+} */
+
+.run-effects .slideInLeft {
     position: relative;
     animation: slideinleft 2.5s;
 }
 
-.slideInRight {
+.run-effects .slideInRight {
     position: relative;
     animation: slideinright 2.5s;
 }
