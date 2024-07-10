@@ -9,12 +9,17 @@ html {
     font-size: 2vh;
 }
 
+
 /* RESET BUTTON BORDER */
 button {
     border: none;
 }
 
 /* GENERAL STYLING */
+
+.control-width {
+    max-width: 150vh;
+}
 
 p {
     color: #424242;
@@ -35,9 +40,9 @@ a {
     letter-spacing: 0.1vw;
     color: white;
     font-weight: 500;
-    padding: 3% 4%;
+    padding: 2vh 3vh;
     display: flex;
-    gap: 1vw;
+    gap: 2vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -76,6 +81,19 @@ a {
 .dark-bg p {
     color: #A5A5A5;
 }
+
+/* RESPONSIVE DISPLAY */
+
+.d-lg {
+    display: block;
+}
+
+.d-md {
+    display: none;
+}
+
+
+
 
 /* HEADER */
 
@@ -133,10 +151,6 @@ a {
     width: 100%;
 }
 
-.control-width {
-    max-width: 150vh;
-}
-
 
 .hero-body {
     z-index: 2;
@@ -144,7 +158,6 @@ a {
     position: absolute;
     max-height: 62.5vw;
     top: 45%;
-    /* left: 10%; */
 }
 
 .hero-gap {
@@ -166,7 +179,6 @@ a {
     padding-right: 7vw;
     cursor: pointer;
     width: 22%;
-    align-items: start;
 }
 
 .hero-btn:hover .hero-btn-arrow {
@@ -180,10 +192,18 @@ a {
 }
 
 
+/* OUR IMPACT */
+
 .secondary {
     font-size: 8vh;
     line-height: 10vh;
     width: 55%;
+}
+
+.stats-div {
+    width: 60%;
+    margin-left: auto;
+    align-items: end;
 }
 
 .stats {
@@ -193,13 +213,6 @@ a {
 
 .stat-content {
     font-size: 2.2vh;
-}
-
-
-.stats-div {
-    width: 60%;
-    margin-left: auto;
-    align-items: end;
 }
 
 .left-stat {
@@ -305,15 +318,14 @@ a {
 
 /* MORE INFO SECTION */
 
+.more-info {
+    column-gap: 15%;
+}
 
 .info-h {
     font-size: 5vh;
     font-weight: 500;
     line-height: 6.5vh;
-}
-
-.more-info {
-    column-gap: 15%;
 }
 
 
@@ -459,4 +471,194 @@ a {
 
 .social-icon>img {
     width: 2vh;
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+
+    /* GENERAL STYLES */
+    .control-width {
+        max-width: 980px;
+    }
+
+
+    /* HERO */
+
+    .hero-h {
+        font-size: 9.5vh;
+        line-height: 11vh;
+        width: 65%;
+    }
+
+
+    /* OUR IMPACT */
+
+    .secondary {
+        width: 75%;
+    }
+
+    .stats-div {
+        width: 65%;
+    }
+
+    .left-stat {
+        width: 65%;
+    }
+
+
+    /* MORE INFO SECTION */
+
+    .info-h {
+        font-size: 3.8vh;
+        line-height: 5vh;
+    }
+
+    /* TESTIMONIALS */
+
+    .test-summary {
+        font-size: 4vh;
+        line-height: 5vh
+    }
+
+
+    /* FOOTER */
+
+    .footer-h {
+        font-size: 6vh;
+    }
+}
+
+
+@media only screen and (max-width: 920px) {
+
+    /* GENERAL STYLES */
+
+    .full-width-md {
+        width: 100% !important;
+    }
+
+    .flex-col-md {
+        flex-direction: column;
+    }
+
+    .control-width {
+        max-width: 90%;
+    }
+
+    .sd-padding {
+        padding-top: 8vh;
+        padding-bottom: 10vh;
+    }
+
+
+    /* RESPONSIVE DISPLAYS */
+
+    .d-lg {
+        display: none;
+    }
+
+    .d-md {
+        display: block;
+    }
+
+    /* HERO */
+
+    .hero-body {
+        flex-direction: column !important;
+        align-items: start !important;
+        top: 40%;
+    }
+
+    .hero-h {
+        font-size: 7.5vh;
+        line-height: 10vh;
+        width: 85%;
+    }
+
+    .hero-gap {
+        gap: 10vh;
+    }
+
+    .hero-btn {
+        font-size: 2.4vh;
+        line-height: 4.5vh;
+        width: 40%;
+    }
+
+
+    /* OUR IMPACT */
+
+    .impact {
+        gap: 7vh;
+    }
+
+    .secondary {
+        font-size: 7vh;
+        line-height: 9vh;
+        width: 100%;
+    }
+
+    .stats-div {
+        width: 100%;
+    }
+
+    .stats {
+        font-size: 7vh;
+        line-height: 8vh;
+    }
+
+
+    /* SERVICES */
+
+    .services-body {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .service-p {
+        max-width: 90%;
+    }
+
+    .services-items {
+        width: 45%;
+    }
+
+
+    /* TESTIMONIALS */
+
+    .testimonial-body {
+        gap: 5vh;
+    }
+
+    .test-summary {
+        font-size: 3vh;
+        line-height: 4vh;
+    }
+
+    .testimonial p {
+        line-height: 4vh;
+        font-size: 2vh;
+    }
+
+    .testimonial-quote {
+        width: 6vh;
+        left: -8vh;
+        top: 5vh;
+    }
+
+    .testimonial {
+        margin: 0;
+    }
+
+    /* FOOTER */
+
+    .newsletter-body {
+        gap: 5vh;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        margin-left: 0;
+    }
 }
