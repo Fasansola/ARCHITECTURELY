@@ -272,7 +272,7 @@ a {
 
 .service-item {
     width: 100%;
-    height: 90%;
+    height: 85%;
 }
 
 
@@ -728,10 +728,55 @@ a {
 
     .service-p {
         max-width: 100%;
+        font-size: 4.5vw;
+        line-height: 8vw;
     }
 
     .services-items {
         width: 80%;
         padding-left: 4%;
+    }
+
+    .service-item {
+        height: 80%;
+    }
+
+    .services-items h3 {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+
+    /* MORE INFO */
+
+    .info-h {
+        line-height: 6vh;
+    }
+
+
+    /* TESTIMONIAL */
+
+    .testimonial-quote {
+        width: 5vh;
+        left: -3vh;
+        top: 2vh;
+    }
+
+
+    /* FOOTER */
+
+    .footer-h {
+        font-size: 10vw;
+        line-height: 14vw;
+    }
+
+    .footer-policy {
+        margin: 5vh 0 3vh 0;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .footer-menu {
+        flex-direction: column;
     }
 }
