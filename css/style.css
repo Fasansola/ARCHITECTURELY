@@ -268,7 +268,12 @@ a {
     position: relative;
     width: 30%;
     height: 60vh;
-    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+.services-items:first-child {
+    margin-left: 1%;
 }
 
 .service-item {
@@ -291,7 +296,7 @@ a {
 
 .slide {
     position: relative;
-    transition: transform 2.5s ease;
+    transition: transform 1s ease;
 }
 
 .service-cta {
@@ -627,7 +632,8 @@ a {
     }
 
     .services-items {
-        width: 45%;
+        width: 55%;
+        padding-left: 2%;
     }
 
 

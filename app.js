@@ -1,13 +1,18 @@
 let services = document.getElementById('services');
+let items = document.querySelectorAll('.services-items');
 let prev = document.getElementById("service-prev");
 let next = document.getElementById("service-next");
 let serviceSlide = services.querySelector('.slide');
 
 
-services.addEventListener('mouseenter', moveBack)
-services.addEventListener('mouseleave', infiniteScroll)
-prev.addEventListener('click', moveBack);
+
+let itemsHidden = items.length - (window.innerWidth / items[0].offsetWidth)
+let counter = itemsHidden
+let slideIndex = 0
+
+
 next.addEventListener('click', moveNext);
+prev.removeEventListener('click', moveBack);
 
 
 // FUNCTIONS
@@ -19,22 +24,56 @@ function infiniteScroll() {
 
 
 function moveNext() {
-    serviceSlide.style.transform = "translateX(-51%)"
-    serviceSlide.style.transition = "transform 2.5s ease"
-    next.style.stroke = "#A5A5A5";
-    prev.style.stroke = "#ffffff";
-    prev.addEventListener('click', moveBack);
-    next.removeEventListener('click', moveNext);
+    if (counter > 1) {
+        counter--
+        slideIndex = itemsHidden - counter
+    } else {
+        slideIndex += counter
+        counter--
+    }
+
+    console.log("Counter: ", counter)
+    console.log("Index: ", slideIndex)
+
+    serviceSlide.style.transform = `translateX(-${slideIndex * items[0].offsetWidth}px)`
+
+    checkMotion()
 }
 
 
-function moveBack() {
-    serviceSlide.style.transform = "translateX(0)"
-    serviceSlide.style.transition = "transform 2.5s ease"
-    prev.style.stroke = "#A5A5A5";
-    next.style.stroke = "#ffffff";
-    prev.removeEventListener('click', moveBack);
-    next.addEventListener('click', moveNext);
+function moveBack() { 
+    counter++
+
+    if (slideIndex >= 1) {
+        slideIndex--
+    } else {
+        slideIndex -= slideIndex
+    }
+
+    serviceSlide.style.transform = `translateX(-${slideIndex * items[0].offsetWidth}px)`
+
+    checkMotion()
+}
+
+
+let checkMotion = () => {
+    if (counter <= 0) {
+        next.removeEventListener('click', moveNext);
+        next.style.stroke = "#A5A5A5";
+    }
+    else {
+        next.addEventListener('click', moveNext);
+        next.style.stroke = "#FFFFFF";
+    }
+
+    if (counter >= 3) {
+        prev.removeEventListener('click', moveBack);
+        prev.style.stroke = "#A5A5A5";
+    }
+    else {
+        prev.addEventListener('click', moveBack);
+        prev.style.stroke = "#ffffff";
+    }
 }
 
 
@@ -100,3 +139,15 @@ function checkScroll() {
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('resize', checkScroll);
 window.addEventListener('load', checkScroll);
+
+
+// ENSURE THE SERVICES SLIDER WORKS ON TABLETS & MOBILE 
+
+/*
+
+We can find each slider width and have a counter that checks to see the hidden elements based on that.
+The count would serve as an index and help us loop over the element, or each click of next we transform by - a width, we do the reverse of prev btn On each click
+
+
+
+*/
